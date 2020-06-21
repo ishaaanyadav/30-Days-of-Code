@@ -1,0 +1,24 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input())
+    f=0
+    l=[]
+    a=str(bin(n).replace("0b", ""))
+    
+    for i in a:
+        if i=='1':
+            f=f+1
+            l.append(f)
+        else:
+            f=0
+            l.append(f)
+    print(max(l)) 
