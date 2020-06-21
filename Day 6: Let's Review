@@ -1,0 +1,22 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n = int(input())
+p=0
+while(p<n):
+    p=p+1   
+    e=[]
+    o=[]
+    l=(str(input()))
+
+
+    for j in range(len(l)):
+        if (j%2==0):
+            e.append(l[j])
+        else:
+            o.append(l[j])
+    
+    arr="".join(e)
+    ar="".join(o)
+    print(arr,ar)
+    
+    
+        
