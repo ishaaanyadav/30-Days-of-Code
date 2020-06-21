@@ -1,0 +1,26 @@
+n = int(input())
+
+phoneBook = {}
+
+key, val = [], []
+
+# Collecting pairs of data .
+for i in range(n):
+    x = str(input()).split()
+    key.append(x[0])
+    val.append(x[1])
+
+# I make the dictionary.
+phoneBook = dict(zip(key, val))
+
+
+# Output the desired request.
+for i in range(n):
+    try:
+        name = input()
+        if not name in phoneBook :  
+            print('Not found')
+        else:
+            print(f'{name}={phoneBook[name]}')
+    except: 
+        break
